@@ -4,7 +4,7 @@ Build feasible volunteer rotas with explicit fairness tradeoffs.
 
 ## Status
 
-Implemented and locally verified on 23 October 2026: 27 Node tests and 15 browser workflow checks passed. Public deployment is prepared but awaits a separate ShiftFair hosting allowance. The source repository remains private until explicit owner publication authorization. Actual evidence and limitations: [verification](docs/VERIFICATION.md).
+**Live app: https://shiftfair-564976398462.web.app** — deployed and publicly verified on 24 October 2026 IST. All 27 Node tests, 15 local browser checks and 15 public browser checks passed. All ten served application files match the tested artifact. The source repository remains private until explicit owner publication authorization. Actual evidence and limitations: [verification](docs/VERIFICATION.md).
 
 ## Intended use
 

@@ -25,7 +25,7 @@ Execution: owner explicitly approved scope and instructed implementation on 23 O
   - Verify (mechanical): metric comparison/oracle, lock preservation and browser conflict/edit flows.
   - Learner check: lock one reviewed assignment, change a weight, regenerate and inspect the same locked person.
   - Commit: save comparison workflow with evidence.
-- [ ] **3. Save, export and release the complete workflow**
+- [x] **3. Save, export and release the complete workflow**
   - Becomes usable: reload inputs, export reviewed CSV/print, try keyboard/mobile and public HTTPS.
   - Why now: outputs must come from the valid reviewed schedule.
   - PRD ref: Persistence and exports; States and Boundaries.
@@ -47,6 +47,8 @@ Execution: owner explicitly approved scope and instructed implementation on 23 O
 - [ ] Owner completes or declines a suitable investigation/reflection; no response is invented.
 
 ## Revisions
+24 October: isolated Firebase release completed under the explicit USD1 allowance. All15 actual public browser checks and ten public app-file hash comparisons passed. Initial navigation timeout retained; unchanged full retry passed. Technical slice3 is complete; no owner hands-on review, reflection or final readiness approval is inferred.
+
 23 October: first two slices and all local functionality in slice3 were implemented and mechanically verified: 27 Node tests and15 local browser checks passed. Integrated small-app verification covers the first two slices together in one recoverable code milestone, without claiming separate learner hands-on checks. Slice3 remains open for actual public deployment and verification. No scope expansion.
 
 23 October: preserve the official workflow artifacts and attribution, while following the owner's explicit instruction to proceed with implementation without additional routine questionnaires. This departs from the pack's separate pre-build formal approval/pause sequence. Do not claim all stages complete or unconditional event compliance. Required personal answers and genuine hands-on review remain owner actions.
