@@ -43,7 +43,7 @@ Execution: owner explicitly approved scope and instructed implementation on 23 O
 - [ ] Resolve actual requested changes and owner confirms readiness.
 
 ## Code Tour and App Map
-- [ ] Prepare app map tracing input → worker result → validated export.
+- [x] Prepare app map tracing input → worker result → validated export. Actual route references were checked against implemented symbols; owner activity is still pending.
 - [ ] Owner completes or declines a suitable investigation/reflection; no response is invented.
 
 ## Revisions
