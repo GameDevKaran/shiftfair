@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan a small volunteer rota, preserve hard constraints and compare a transparent measure of assignment burden.">
+  <meta name="theme-color" content="#133c41">
+  <title>ShiftFair · A clearer volunteer rota</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#workspace">Skip to planning worksheet</a>
+<div id="app">
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="ShiftFair home"><span class="brand-mark" aria-hidden="true">S<span>F</span></span><span>ShiftFair<small>THE VOLUNTEER WORKSHEET</small></span></a>
+    <span class="privacy-note"><span aria-hidden="true">○</span> Your plan stays in this browser</span>
+  </header>
+  <main id="workspace">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">COVER THE SHIFTS. SEE THE TRADEOFFS.</p><h1 id="page-title">A fairer rota starts<br>with visible choices.</h1><p class="lede">Keep availability, hours and locked decisions intact. Compare who carries the burden before you choose a schedule.</p></div>
+      <aside class="boundary-note"><span class="note-number">12 / 8</span><p>Up to <strong>12 volunteers</strong><br>and <strong>8 shifts</strong> in one planning week.</p><p>No account. No messages sent.<br>No universal definition of fairness.</p></aside>
+    </section>
+
+    <section class="plan-bar" aria-label="Plan and storage">
+      <label class="plan-name" for="plan-title">PLAN NAME<input id="plan-title" maxlength="80" autocomplete="off"></label>
+      <div class="file-actions"><button id="save-plan" type="button">Save locally</button><button id="reload-plan" type="button">Reload saved</button><button id="load-example" type="button" class="quiet">Synthetic example</button><button id="start-blank" type="button" class="quiet">New plan</button></div>
+      <p id="save-state" class="save-state">Not saved in this browser.</p>
+    </section>
+
+    <div class="setup-grid">
+      <section class="panel" aria-labelledby="volunteers-title"><div class="section-heading"><div><p class="step-label">01 · PEOPLE</p><h2 id="volunteers-title">Who can help?</h2></div><button id="add-volunteer" type="button" class="small">+ Volunteer</button></div><p class="section-help">Set each person's maximum hours for this week.</p><div id="volunteer-editor"></div><p id="volunteer-count" class="counter"></p></section>
+      <section class="panel" aria-labelledby="shifts-title"><div class="section-heading"><div><p class="step-label">02 · COVERAGE</p><h2 id="shifts-title">What needs covering?</h2></div><button id="add-shift" type="button" class="small">+ Shift</button></div><p class="section-help">Half-hour increments. Overlapping assignments are never allowed.</p><div id="shift-editor"></div><p id="shift-count" class="counter"></p></section>
+    </div>
+
+    <section class="panel preferences-panel" aria-labelledby="preferences-title">
+      <div class="section-heading"><div><p class="step-label">03 · AVAILABILITY & CHOICES</p><h2 id="preferences-title">Make the constraints explicit.</h2></div><span class="text-badge">Hard constraints stay hard</span></div>
+      <p class="section-help">For each person and shift: mark availability, choose an inconvenience weight from 0–10, or lock a required assignment. A lock never overrides availability or hour limits.</p>
+      <div id="preference-editor"></div>
+      <div class="formula-note"><strong>How burden is counted</strong><span>Hours × (1 + inconvenience weight), added across a person's shifts. We minimize the highest individual burden first, then squared burdens, then total burden. Weights are your choices, not inferred personal facts.</span></div>
+    </section>
+
+    <section class="solve-bar" aria-label="Generate a schedule"><div><h2>Keep every requirement. Compare the result.</h2><p>The baseline is the first feasible schedule found. Both compared schedules must meet full staffing.</p></div><div class="solve-actions"><button id="generate" type="button" class="primary">Generate & compare <span aria-hidden="true">→</span></button><button id="cancel-solve" type="button" hidden>Cancel search</button></div></section>
+    <div id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <section id="results" class="panel results" aria-labelledby="results-title" hidden>
+      <div class="section-heading"><div><p class="step-label">04 · REVIEW THE EVIDENCE</p><h2 id="results-title">One set of constraints. Two views.</h2></div><span id="proof-state" class="text-badge"></span></div>
+      <div id="result-explanation"></div>
+      <div id="comparison" class="comparison"></div>
+      <div id="burden-region"></div>
+      <div class="schedule-heading"><div><h3 id="selected-title">Reviewed schedule</h3><p class="section-help">Lock a reviewed assignment to preserve it, then regenerate the remaining rota.</p></div><div class="export-actions"><button id="export-csv" type="button" disabled>Export CSV</button><button id="print-plan" type="button" disabled>Print schedule</button></div></div>
+      <div id="schedule-region"></div>
+      <p id="result-footnote" class="fine-print"></p>
+    </section>
+
+    <footer><span>ShiftFair · Local, transparent volunteer planning</span><span>Planning aid only. No payroll or employment-law assessment.</span></footer>
+  </main>
+</div>
+<div id="print-root"></div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "shiftfair", "version": "0.1.0", "private": true, "type": "module",
+  "description": "Inspect volunteer coverage and explicit burden without relaxing hard constraints",
+  "license": "MIT", "engines": { "node": ">=24.0.0" },
+  "scripts": { "build": "node scripts/build.mjs", "test": "npm run build && node --test dist/tests/*.test.js", "start": "node scripts/serve.mjs", "test:browser": "node scripts/verify-browser.mjs" },
+  "devDependencies": { "typescript": "5.9.3", "@types/node": "24.10.0", "@playwright/test": "1.64.1" }
+}

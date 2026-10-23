@@ -7,7 +7,7 @@ status: draft
 Execution: owner explicitly approved scope and instructed implementation on 23 October, preserving six requirements. Fast execution follows that instruction. PRD/spec/checklist remain draft until actually reviewed; do not invent formal sign-offs. Technical slice completion is not learner review completion.
 
 ## Slices
-- [ ] **1. Generate a constraint-valid rota**
+- [x] **1. Generate a constraint-valid rota**
   - Becomes usable: synthetic inputs produce a validated full schedule with truthful search status.
   - Why now: hard-constraint and proof accuracy are the kernel.
   - PRD ref: Editable hard constraints; Solver outcomes and explanations.
@@ -16,7 +16,7 @@ Execution: owner explicitly approved scope and instructed implementation on 23 O
   - Verify (mechanical): independent tiny-case enumeration, hard constraints, locked conflicts and budget tests; build and sample browser solve.
   - Learner check: generate the synthetic sample and inspect each volunteer's hours against the maximum.
   - Commit: save verified kernel and first workflow.
-- [ ] **2. Compare burden and preserve decisions**
+- [x] **2. Compare burden and preserve decisions**
   - Becomes usable: view both schedules and individual scores, edit weights, lock assignments and regenerate.
   - Why now: it proves the distinctive behavior on top of valid coverage.
   - PRD ref: Transparent comparison; Locks and recomputation.
@@ -47,4 +47,6 @@ Execution: owner explicitly approved scope and instructed implementation on 23 O
 - [ ] Owner completes or declines a suitable investigation/reflection; no response is invented.
 
 ## Revisions
+23 October: first two slices and all local functionality in slice3 were implemented and mechanically verified: 27 Node tests and15 local browser checks passed. Integrated small-app verification covers the first two slices together in one recoverable code milestone, without claiming separate learner hands-on checks. Slice3 remains open for actual public deployment and verification. No scope expansion.
+
 23 October: preserve the official workflow artifacts and attribution, while following the owner's explicit instruction to proceed with implementation without additional routine questionnaires. This departs from the pack's separate pre-build formal approval/pause sequence. Do not claim all stages complete or unconditional event compliance. Required personal answers and genuine hands-on review remain owner actions.

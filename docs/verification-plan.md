@@ -1,10 +1,10 @@
 # ShiftFair: verification plan
 
-No tests or evaluations have run. The following are prospective acceptance targets, not results.
+Current measured evidence: docs/VERIFICATION.md — 27 Node tests and 15 local browser checks passed on 23 October. The historical prospective target below is preserved as unmeasured, not claimed completed.
 
 ## Fixtures and acceptance
 
-12 development and 12 held-out schedules, six intentionally infeasible. Zero hard-constraint violations in accepted solutions; every infeasible case marked as such; exported assignments identical to the reviewed solution. For tiny cases enumerate solutions independently to check the stated objective. Compare against first-available greedy assignment; report coverage and burden differences, including cases where fairness costs coverage or has no benefit. Do not claim the schedule is socially fair merely because a metric improves.
+Original target: 12 development and 12 held-out schedules, six intentionally infeasible. This target has not been run. Actual accelerated verification independently exhaustively enumerates twelve tiny cases (six feasible, six impossible), plus boundary/limit/lock tests. The implemented baseline is first feasible, not a greedy benchmark. Both schedules must satisfy full coverage; improving fairness never permits a coverage violation. No universal social-fairness claim follows from a metric improvement.
 
 ## Demonstration to verify
 
