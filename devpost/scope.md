@@ -1,13 +1,13 @@
 ---
 doc: scope
-status: draft
+status: approved
 ---
 
 # ShiftFair
 
 Plan a small volunteer rota and inspect the tradeoff between covering shifts and distributing an explicitly defined burden.
 
-This draft carries forward `core-research/project-briefs/BAI-02-shiftfair.md` from the finalized portfolio. The concept was agent-proposed; the owner authorized execution of the portfolio, but ShiftFair-specific scope approval has not been recorded. No learner review or personal motivation is invented here.
+This scope carries forward `core-research/project-briefs/BAI-02-shiftfair.md` from the finalized portfolio. The concept was agent-proposed. On 23 October 2026 the owner explicitly approved this displayed scope and instructed implementation, preserving the six requirements recorded below. Personal motivation and learning are not invented.
 
 ## The Unique Kernel
 
@@ -55,4 +55,4 @@ Employment-law compliance and payroll need a different domain and evidence. Auto
 
 ## Review Status
 
-Saved on 23 October 2026 as `status: draft`. The material review is whether this bounded volunteer-planning scope and explicit burden-tradeoff behavior match the owner's intended ShiftFair project. No additional layout or stack question is needed to make this draft reviewable. A clear owner approval of this displayed scope can be recorded once; later stage approvals, hands-on feedback and personally written submission content remain separate evidence.
+Approved on 23 October 2026. Actual owner response: "Yes, this matches the intended ShiftFair MVP. Keep the scope focused and proceed with implementation." The owner emphasized hard availability/staffing/hour/lock constraints; visible individual burden and editable weights; preserved locks on recomputation; proof versus incomplete-search accuracy; persistence/CSV/print/conflict explanations; and genuine Skill Pack participation with verifiable evidence. They excluded notifications, payroll, employment-law compliance and enterprise expansion, and prioritized a complete tested deployed demonstration. Later document review, hands-on feedback and personally written submission content remain separate evidence. No second scope approval is needed.
