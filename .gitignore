@@ -22,3 +22,6 @@ tmp/
 *.log
 .DS_Store
 Thumbs.db
+
+# Personal learner context stays out of source history
+/devpost/learner-profile.md
