@@ -30,9 +30,12 @@ Open http://127.0.0.1:8785 . To run browser checks, install the matching test br
 
 The synthetic example has four two-hour shifts. Its first feasible baseline gives one person eight hours; the optimized candidate gives each of four people two hours, preserving all four required slots. This is authored demonstration data, not a user study. Inputs save only in this browser; regenerating is required after loading or edits. Nothing is sent to volunteers. No notifications, payroll or employment-law compliance is provided.
 
-The official Devpost Learn Skill Pack source, real owner scope approval and outstanding learner review are documented in [provenance](SKILL_PACK_PROVENANCE.md). Agent tests do not establish completed learner participation. Required personal submission answers and final media belong to the owner.
 
 Keep credentials in local ignored files or the deployment secret store. Do not commit user data, provider tokens or private evaluation records.
+
+## Development approach
+
+Developed through AI-assisted coding and ChatGPT-assisted research. Verification results and their limits are documented in this repository. Development followed the official Devpost Learn Skill Pack with the owner’s approved scope; private learning and review records are maintained separately.
 
 ## License
 
